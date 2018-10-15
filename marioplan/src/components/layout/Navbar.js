@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="nav-wrapper.grey.darken-3">
+    <nav className="nav-wrapper grey darken-3">
       <div className="container">
-        <Link to="/" className="Brand-logo">
-          MarioPlan
-        </Link>
+        <Link to="/" className="Brand-logo">MarioPlan</Link>
       </div>
     </nav>
   );
