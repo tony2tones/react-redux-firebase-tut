@@ -5,14 +5,15 @@ import { signOut } from "../../store/actions/authActions";
 
 import "./layout.css";
 
-const SignedInLinks = () => {
+/*eslint-disable */
+const SignedInLinks = props => {
   return (
     <ul className="right">
       <li>
         <NavLink to="/create">New Project</NavLink>
       </li>
       <li>
-        <NavLink to="/">Log Out</NavLink>
+        <a onClick={props.signOut}>Log Out</a>
       </li>
       <li>
         <NavLink to="/" className="btn btn-floating pink lighten-1">
@@ -29,4 +30,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapDispatchToProps)(SignedInLinks);
+export default connect( null, mapDispatchToProps)(SignedInLinks);
