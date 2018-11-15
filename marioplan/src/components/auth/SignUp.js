@@ -65,7 +65,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    signUp: newUser => dispatch(signUp(newUser))
+    signUp: creds => dispatch(signUp(creds))
   };
 };
 

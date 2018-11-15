@@ -2,14 +2,14 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-// Initialize Firebase
-var config = {
-  apiKey: "AIzaSyAoNVjsbgpTpqJ3tvnGobcDmEjXQr9ZBH4",
-  authDomain: "react-redux-tut-5a0e9.firebaseapp.com",
-  databaseURL: "https://react-redux-tut-5a0e9.firebaseio.com",
-  projectId: "react-redux-tut-5a0e9",
-  storageBucket: "react-redux-tut-5a0e9.appspot.com",
-  messagingSenderId: "294504005247"
+ // Initialize Firebase
+ var config = {
+  apiKey: "AIzaSyCHBv--mX4KE65f-G4mZ_Esnkj_RVBJoss",
+  authDomain: "redux-tut-app.firebaseapp.com",
+  databaseURL: "https://redux-tut-app.firebaseio.com",
+  projectId: "redux-tut-app",
+  storageBucket: "redux-tut-app.appspot.com",
+  messagingSenderId: "979040838920"
 };
 firebase.initializeApp(config);
 firebase.firestore().settings({ timestampsInSnapshots: true });
